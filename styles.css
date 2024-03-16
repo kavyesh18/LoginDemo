@@ -1,0 +1,27 @@
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: black;
+}
+
+.h-txt span {
+    font-size:x-large;
+}
+
+.h-txt h1{
+    font-size: 3.5em;
+}
+
+.h-txt a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e4caf;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}

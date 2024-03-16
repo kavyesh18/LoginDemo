@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+<form>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstname"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastname"></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number:</td>
+            <td><input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number"></td>
+        </tr>
+        <tr>
+            <td>Qualification:</td>
+            <td>
+                <select name="qualification">
+                    <option value="btech">B.Tech</option>
+                    <option value="mtech">M.Tech</option>
+                    <option value="mca">MCA</option>
+                    <option value="bsc">BSc</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Skills:</td>
+            <td>
+                <input type="checkbox" name="skills[]" value="java"> Java<br>
+                <input type="checkbox" name="skills[]" value="python"> Python<br>
+                <input type="checkbox" name="skills[]" value="c"> C<br>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="file">Upload your cv:</label></td>
+            <td><input type="file" name="pic"><br></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea name="address" rows="4" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="submit" value="Submit"></td>
+            <td colspan="1" style="text-align: center;"><input type="reset" value="Reset"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
